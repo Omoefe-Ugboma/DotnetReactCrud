@@ -1,6 +1,6 @@
 import { Menu, X } from 'lucide-react';
 import { useState } from 'react';
-// import { a } from "react-router";
+import { NavLink } from "react-router";
 
 const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -18,7 +18,7 @@ const Navbar = () => {
                     {/* Desktop Navigation */}
                     <nav className="hidden md:block">
                         <div className="ml-10 flex items-baseline space-x-8">
-                            <a
+                            <NavLink
                                 to='/'
 
                                 className={({ isActive }) => `px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 transform hover:scale-105 ${isActive
@@ -27,9 +27,9 @@ const Navbar = () => {
                                     }`}
                             >
                                 Home
-                            </a>
+                            </NavLink>
 
-                            <a
+                            <NavLink
                                 to='/about'
 
                                 className={({ isActive }) => `px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 transform hover:scale-105 ${isActive
@@ -38,9 +38,9 @@ const Navbar = () => {
                                     }`}
                             >
                                 About
-                            </a>
+                            </NavLink>
 
-                            <a
+                            <NavLink
                                 to='/person'
 
                                 className={({ isActive }) => `px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 transform hover:scale-105 ${isActive
@@ -49,7 +49,7 @@ const Navbar = () => {
                                     }`}
                             >
                                 Person
-                            </a>
+                            </NavLink>
                         </div>
                     </nav>
 
@@ -79,7 +79,7 @@ const Navbar = () => {
                     }`}
             >
                 <div className="px-2 pt-2 pb-3 space-y-1 bg-gray-50 border-t border-gray-200">
-                    <a
+                    <NavLink
                         to="/"
                         className={({ isActive }) => `block px-4 py-3 rounded-lg text-base font-medium transition-all duration-200 ${isActive
                             ? 'bg-gradient-to-r from-blue-500 to-purple-500 text-white shadow-md transform scale-105'
@@ -87,9 +87,9 @@ const Navbar = () => {
                             }`}
                     >
                         Home
-                    </a>
+                    </NavLink>
 
-                    <a
+                    <NavLink
                         to="/about"
                         className={({ isActive }) => `block px-4 py-3 rounded-lg text-base font-medium transition-all duration-200 ${isActive
                             ? 'bg-gradient-to-r from-blue-500 to-purple-500 text-white shadow-md transform scale-105'
@@ -97,9 +97,9 @@ const Navbar = () => {
                             }`}
                     >
                         About
-                    </a>
+                    </NavLink>
 
-                    <a
+                    <NavLink
                         to="/person"
                         className={({ isActive }) => `block px-4 py-3 rounded-lg text-base font-medium transition-all duration-200 ${isActive
                             ? 'bg-gradient-to-r from-blue-500 to-purple-500 text-white shadow-md transform scale-105'
@@ -107,7 +107,7 @@ const Navbar = () => {
                             }`}
                     >
                         Person
-                    </a>
+                    </NavLink>
                 </div>
             </div>
 
