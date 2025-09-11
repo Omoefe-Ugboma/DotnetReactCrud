@@ -4,6 +4,7 @@ import About from './pages/About'
 import Home from './pages/Home'
 import NotFound from './pages/NotFound'
 import Person from './components/person/Person'
+import { Toaster } from 'react-hot-toast'
 
 const App = () => {
   return (

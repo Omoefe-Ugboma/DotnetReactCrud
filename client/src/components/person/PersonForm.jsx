@@ -1,4 +1,5 @@
 import { Save, RotateCcw } from 'lucide-react';
+import { useForm } from 'react-hook-form';
 
 const PersonForm = ({ methods, onFormReset, onFormSubmit }) => {
 
@@ -7,8 +8,6 @@ const PersonForm = ({ methods, onFormReset, onFormSubmit }) => {
         handleSubmit,
         formState: { errors },
     } = methods;
-
-
 
     return (
         <div className="bg-white rounded-xl shadow-lg border border-gray-100 p-6" style={{ marginBottom: '5px' }}>
